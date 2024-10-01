@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="form-heading">Shareable Resume Builder</h2>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Upload Image</legend>
+            <label for="image">Profile Image:</label>
+            <input type="file" id="image-input" accept="image/*">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Enter Your Username" id="username" required>
+
+            <label for="fullName">Name:</label>
+            <input type="text" placeholder="Enter Your Full Name" id="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter Your Email" id="email" required>
+
+            <label for="phone">Number:</label>
+            <input type="tel" placeholder="Enter Your Phone No" id="phone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea placeholder="Enter Your Education" id="education" rows="6" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea placeholder="Enter Your Work Experience" id="experience" rows="6" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea placeholder="Enter Your Skills" id="skills" rows="6" required></textarea>
+        </fieldset>
+
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+
+    <br>
+
+    <div id="resume-display">
+        <h3 style="text-align: center;">Your Resume Will Be Shown Here!</h3>
+    </div>
+
+    <br>
+
+    <!-- Shareable link -->
+    <div id="shareable-link-container" style="display: none; text-align: center;">
+        <h2 style="color: #fff;">Shareable Link</h2>
+        <p style="color: #fff;">Unique link to view or edit your resume</p>
+        <a href="#" id="shareable-link" style="color: #fff;" target="_blank"></a> <!-- Set color to white -->
+        <br>
+        <button id="download-pdf"><b>Download PDF</b></button>
+        <button id="edit-resume" style="display: none;"><b>Edit Resume</b></button>
+    </div>
+
+
+    <footer id="contact">
+        <p>Contact me: <a href="mailto:unknownvision90@gmail.com">unknownvision90@gmail.com</a></p>
+        <p>&copy; 2024 Shareable Resume Builder By <b class="my-name">Rahim Ali</b>. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
